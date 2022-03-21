@@ -1,6 +1,8 @@
 @font-face {
     font-family: "Nunito";
     src: local("Nunito"), url(~assets/fonts/Nunito-SemiBold.ttf) format("truetype");
+    font-display: swap;
+    font-style: normal;
 }
 
 html {

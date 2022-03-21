@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-row w-full bg-dark py-6">
+  <div class="flex flex-row w-full bg-dark py-6 shadow-md">
     <div class="flex-1">
       <p class="text-purple text-3xl ml-40">Igor Nascimento</p>
     </div>
