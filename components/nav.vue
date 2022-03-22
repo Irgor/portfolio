@@ -2,23 +2,15 @@
   <div class="flex flex-row w-screen h-24">
     <div class="flex flex-3 md:flex-1 flex-row items-center">
       <p class="ml-8 text-2xl text-purple-600 md:ml-40 cursor-pointer">
-        Igor Nascimento
+        {{ name }}
       </p>
+
     </div>
-    <div
-      class="
-        hidden
-        flex-1
-        justify-end
-        mr-40
-        items-center
-        space-x-20
-        text-1xl
-        md:flex
-      "
-    >
+    <div class="hidden flex-1 justify-end mr-40 items-center space-x-20 text-1xl md:flex">
       <p class="cursor-pointer transition-all hover:text-purple-600">Home</p>
-      <p class="cursor-pointer transition-all hover:text-purple-600">Projects</p>
+      <p class="cursor-pointer transition-all hover:text-purple-600">
+        Projects
+      </p>
       <p class="cursor-pointer transition-all hover:text-purple-600">About</p>
       <p class="cursor-pointer transition-all hover:text-purple-600">Contact</p>
     </div>
@@ -34,5 +26,10 @@ import Vue from 'vue'
 
 export default Vue.extend({
   name: 'Nav',
+  data() {
+    return {
+      name: '<IgorNascimento/>'
+    }
+  },
 })
 </script>

@@ -13,9 +13,11 @@
       </div>
 
     </div>
+
     <div class="flex flex-1 mr-24 justify-center items-center align-center w-full px-8 my-2 mb-8 md:my-32 md:mb-36">
       <img class="animate-bounce image" src="@/assets/images/planet.png" />
     </div>
+
   </div>
 </template>
 

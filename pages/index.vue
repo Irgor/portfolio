@@ -1,8 +1,10 @@
 
 <template>
   <div>
-    <Nav></Nav>
-    <Presentation></Presentation>
+    <Nav />
+    <Presentation />
+    <Infos />
+    <AboutMe />
   </div>
 </template>
 
