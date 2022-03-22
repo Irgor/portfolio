@@ -7,13 +7,13 @@
       <div>Eu sou o <span class="text-purple-600">Igor Nascimento.</span></div>
       <div class="text-2xl md:text-2xl text-gray-400 mt-1">Full Stack Engineer</div>
 
-      <div class="flex felx-row mt-14 text-lg space-x-12">
+      <div class="flex flex-col md:flex-row mt-14 text-lg space-y-6 md:space-y-0 md:space-x-12 ">
         <div class="cursor-pointer bg-white py-2 px-10 shadow-button">Contact</div>
         <div class="cursor-pointer bg-purple-600 text-white py-2 px-10 shadow-button">Projects</div>
       </div>
 
     </div>
-    <div class="flex flex-1 mr-24 justify-center items-center align-center w-full px-8">
+    <div class="flex flex-1 mr-24 justify-center items-center align-center w-full px-8 my-2 mb-8 md:my-32 md:mb-36">
       <img class="animate-bounce image" src="@/assets/images/planet.png" />
     </div>
   </div>
