@@ -1,16 +1,30 @@
 <template>
-  <div class="flex flex-row w-full bg-dark py-6 shadow-md">
-    <div class="flex-1">
-      <p class="text-purple text-3xl ml-40">Igor Nascimento</p>
+  <div class="flex flex-row w-screen h-24">
+    <div class="flex flex-3 md:flex-1 flex-row items-center">
+      <p class="ml-8 text-2xl text-purple-600 md:ml-40 cursor-pointer">
+        Igor Nascimento
+      </p>
+    </div>
+    <div
+      class="
+        hidden
+        flex-1
+        justify-end
+        mr-40
+        items-center
+        space-x-20
+        text-1xl
+        md:flex
+      "
+    >
+      <p class="cursor-pointer transition-all hover:text-purple-600">Home</p>
+      <p class="cursor-pointer transition-all hover:text-purple-600">Projects</p>
+      <p class="cursor-pointer transition-all hover:text-purple-600">About</p>
+      <p class="cursor-pointer transition-all hover:text-purple-600">Contact</p>
     </div>
 
-    <div
-      class="text-white flex flex-1 space-x-20 items-center justify-end mr-40 "
-    >
-      <p class="transition-all hover:text-purple cursor-pointer">Home</p>
-      <p class="transition-all hover:text-purple cursor-pointer">About me</p>
-      <p class="transition-all hover:text-purple cursor-pointer">Project</p>
-      <p class="transition-all hover:text-purple cursor-pointer">Contact</p>
+    <div class="flex flex-1 items-center justify-end md:hidden mr-8">
+      <img src="@/assets/images/menu.png" alt="" />
     </div>
   </div>
 </template>

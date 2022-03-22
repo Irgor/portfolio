@@ -1,12 +1,12 @@
 @font-face {
-    font-family: "Nunito";
-    src: local("Nunito"), url(~assets/fonts/Nunito-SemiBold.ttf) format("truetype");
+    font-family: "Poppins";
+    src: local("Poppins"), url(~assets/fonts/Poppins-SemiBold.ttf) format("truetype");
     font-display: swap;
     font-style: normal;
 }
 
 html {
-    font-family: "Nunito";
+    font-family: "Poppins";
 }
 
 * {
@@ -15,5 +15,5 @@ html {
 }
 
 body {
-    background-color: #1a1a29;
+    background-color: #F5F5F5;
 }

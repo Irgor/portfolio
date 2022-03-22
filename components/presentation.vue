@@ -1,31 +1,45 @@
 
 <template>
-  <div class="flex flex-row w-full mt-32 justify-center space-x-96">
-    <div class="text-white justify-center">
-      <div class="text leading-8 mt-20 space-y-4 text-left">
-        <div class="text-4xl">Oi, eu sou o</div>
-        <div class="text-5xl">Igor Nascimento</div>
-        <div class="text-1xl">
-          Sou programador com experiência Full Stack lorem ipsum dolor sit amet
-          lorem ipsum dolor sit amet lorem ipsum dolor sit amet
-        </div>
-      </div>
-    </div>
+  <div class="flex flex-col md:flex-row bg-gray-200 h-max mx-8 md:mx-40 rounded-md">
+    <div class="flex flex-1 flex-col justify-center p-8 md:p-24 text-3xl md:text-4xl text-center md:text-left">
 
-    <div class="justify-center">
-      <img class="profile transition-all" src="@/assets/images/igao.jpg" />
+      <div>Olá!</div>
+      <div>Eu sou o <span class="text-purple-600">Igor Nascimento.</span></div>
+      <div class="text-2xl md:text-2xl text-gray-400 mt-1">Full Stack Engineer</div>
+
+      <div class="flex felx-row mt-14 text-lg space-x-12">
+        <div class="cursor-pointer bg-white py-2 px-10 shadow-button">Contact</div>
+        <div class="cursor-pointer bg-purple-600 text-white py-2 px-10 shadow-button">Projects</div>
+      </div>
+
+    </div>
+    <div class="flex flex-1 mr-24 justify-center items-center align-center w-full px-8">
+      <img class="animate-bounce image" src="@/assets/images/planet.png" />
     </div>
   </div>
 </template>
 
 <style>
-.text {
-  width: 32rem;
+.shadow-button {
+ box-shadow: -4px 5px 4px #00000040; 
 }
 
-.profile {
-  clip-path: circle(50%);
-  max-width: 80%;
+@keyframes wooble {
+  0% {
+    transform: scale(1);
+  }
+
+  50% {
+    transform: scale(1.06);
+  }
+
+  100% {
+    transform: scale(1);
+  }
+}
+
+.image {
+  animation: wooble 6s ease 0s infinite normal forwards;
 }
 </style>
 
