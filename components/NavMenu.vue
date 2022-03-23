@@ -4,9 +4,19 @@
       <p class="ml-8 text-2xl text-purple-600 md:ml-40 cursor-pointer">
         {{ name }}
       </p>
-
     </div>
-    <div class="hidden flex-1 justify-end mr-40 items-center space-x-20 text-1xl md:flex">
+    <div
+      class="
+        hidden
+        flex-1
+        justify-end
+        mr-40
+        items-center
+        space-x-20
+        text-1xl
+        md:flex
+      "
+    >
       <p class="cursor-pointer transition-all hover:text-purple-600">Home</p>
       <p class="cursor-pointer transition-all hover:text-purple-600">
         Projects
@@ -16,7 +26,7 @@
     </div>
 
     <div class="flex flex-1 items-center justify-end md:hidden mr-8">
-      <img src="@/assets/images/menu.png" alt="" />
+      <img src="@/assets/images/menu.png" alt="" @click="changeMenu()"/>
     </div>
   </div>
 </template>
@@ -25,11 +35,16 @@
 import Vue from 'vue'
 
 export default Vue.extend({
-  name: 'Nav',
+  name: 'NavMenu',
   data() {
     return {
-      name: '<IgorNascimento/>'
+      name: '<IgorNascimento/>',
     }
+  },
+  methods: {
+    changeMenu() {
+      this.$emit('changeMenu')
+    },
   },
 })
 </script>
