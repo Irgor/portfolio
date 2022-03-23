@@ -7,11 +7,23 @@
       <img class="w-4" src="@/assets/images/close.png" alt="" />
     </div>
 
-    <div class="flex flex-col space-y-8 text-3xl w-full h-full items-center justify-center">
-      <div>Home</div>
-      <div>Projects</div>
-      <div>About</div>
-      <div>Contact</div>
+    <div
+      class="
+        flex flex-col
+        space-y-8
+        text-3xl
+        w-full
+        h-full
+        items-center
+        justify-center
+      "
+    >
+      <div @click="changeMenu()">Home</div>
+      <NuxtLink to="#sobre">
+        <div @click="changeMenu()">Sobre</div>
+      </NuxtLink>
+      <div @click="changeMenu()">Skills</div>
+      <div @click="changeMenu()">Contato</div>
     </div>
   </div>
 </template>

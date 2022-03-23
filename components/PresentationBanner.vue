@@ -8,8 +8,8 @@
       <div class="text-2xl md:text-2xl text-gray-400 mt-1">Full Stack Engineer</div>
 
       <div class="flex flex-col md:flex-row mt-14 text-lg space-y-6 md:space-y-0 md:space-x-12 ">
-        <div class="cursor-pointer bg-white py-2 px-10 shadow-button">Contact</div>
-        <div class="cursor-pointer bg-purple-600 text-white py-2 px-10 shadow-button">Projects</div>
+        <div class="cursor-pointer bg-white py-2 px-10 shadow-button">Contato</div>
+        <div class="cursor-pointer bg-purple-600 text-white py-2 px-10 shadow-button">Skills</div>
       </div>
 
     </div>
@@ -32,7 +32,7 @@
   }
 
   50% {
-    transform: scale(1.06);
+    transform: scale(1.08);
   }
 
   100% {

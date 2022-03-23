@@ -17,16 +17,25 @@
         md:flex
       "
     >
+      <NuxtLink to="#home">
       <p class="cursor-pointer transition-all hover:text-purple-600">Home</p>
-      <p class="cursor-pointer transition-all hover:text-purple-600">
-        Projects
-      </p>
-      <p class="cursor-pointer transition-all hover:text-purple-600">About</p>
-      <p class="cursor-pointer transition-all hover:text-purple-600">Contact</p>
+      </NuxtLink>
+
+      <NuxtLink to="#sobre">
+        <p class="cursor-pointer transition-all hover:text-purple-600">Sobre</p>
+      </NuxtLink>
+
+      <NuxtLink to="#sobre">
+      <p class="cursor-pointer transition-all hover:text-purple-600">Skills</p>
+      </NuxtLink>
+
+      <NuxtLink to="#sobre">
+      <p class="cursor-pointer transition-all hover:text-purple-600">Contato</p>
+      </NuxtLink>
     </div>
 
     <div class="flex flex-1 items-center justify-end md:hidden mr-8">
-      <img src="@/assets/images/menu.png" alt="" @click="changeMenu()"/>
+      <img src="@/assets/images/menu.png" alt="" @click="changeMenu()" />
     </div>
   </div>
 </template>

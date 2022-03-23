@@ -2,10 +2,10 @@
 <template>
   <div>
     <MobileMenu v-show="showMobileMenu" @changeMenu="changeMenu()"/>
-    <NavMenu @changeMenu="changeMenu()"/>
+    <NavMenu id="home" @changeMenu="changeMenu()"/>
     <PresentationBanner />
     <InfosSection />
-    <AboutMe />
+    <AboutMe id="sobre"/>
   </div>
 </template>
 
