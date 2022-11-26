@@ -19,6 +19,12 @@ export const BannerImage = styled.div`
     background-image: url('https://laart.art.br/wp-content/uploads/2020/09/arterenascentista7.png');
     background-position: 22% 35%;
     background-size: 170%;
+
+    @media screen and (max-width: 800px){
+        background-image: url('https://wallpapercave.com/wp/wp7298633.jpg');
+        background-size: cover;
+        background-position: 30%;
+    }
 `;
 
 export const ContainerHolder = styled.div`
@@ -41,6 +47,10 @@ export const TitleName = styled.p<TitleProps>`
     color: white;
     font-family: ${props => props.font};
     text-shadow: 8px 8px 5px rgba(0, 0, 0, 1);
+
+    @media screen and (max-width: 800px){
+        font-size: 28px;
+    }
 `;
 
 export const LettersHolder = styled.div`
