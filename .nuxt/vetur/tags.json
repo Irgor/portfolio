@@ -1,0 +1,17 @@
+{
+  "AboutMe": {
+    "description": "Auto imported from components/AboutMe.vue"
+  },
+  "InfosSection": {
+    "description": "Auto imported from components/InfosSection.vue"
+  },
+  "MobileMenu": {
+    "description": "Auto imported from components/MobileMenu.vue"
+  },
+  "NavMenu": {
+    "description": "Auto imported from components/NavMenu.vue"
+  },
+  "PresentationBanner": {
+    "description": "Auto imported from components/PresentationBanner.vue"
+  }
+}

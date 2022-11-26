@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { BannerContainer, BannerImage, ContainerHolder, TitleName } from "./styles";
+import { BannerContainer, BannerImage, ContainerHolder, LettersHolder, TitleName } from "./styles";
 
 const fonts = [
     'butterfly',
@@ -23,16 +23,34 @@ const fonts = [
 
 export default function Banner() {
 
-    const [currentFont, setCurrentFont] = useState(fonts[0]);
+    const [letters, setLetters] = useState([
+        { letter: 'I', font: 'butterfly' },
+        { letter: 'g', font: 'caesarDressing' },
+        { letter: 'o', font: 'cairoVariable' },
+        { letter: 'r ', font: 'chelseaMarket' },
+        { letter: '\u00A0', font: 'constantine' },
+        { letter: ' N', font: 'constantine' },
+        { letter: 'a', font: 'craftyGirls' },
+        { letter: 's', font: 'dacianDonarium' },
+        { letter: 'c', font: 'decoratedRomanInitials' },
+        { letter: 'i', font: 'frederickat' },
+        { letter: 'm', font: 'goudy' },
+        { letter: 'e', font: 'homespun' },
+        { letter: 'n', font: 'medusa' },
+        { letter: 't', font: 'miniver' },
+        { letter: 'o', font: 'mountains' },
+    ]);
 
     useEffect(() => {
         const interval = setInterval(() => {
-            let font;
-            do {
-                font = fonts[Math.floor(Math.random() * fonts.length)];
-            } while (currentFont == font);
-            setCurrentFont(font);
-        }, 700);
+            const newLetters = letters.map((letter) => {
+                return {
+                    letter: letter.letter,
+                    font: letter.font = fonts[Math.floor(Math.random() * fonts.length)]
+                }
+            })
+            setLetters(newLetters);
+        }, 1000);
         return () => clearInterval(interval);
     }, []);
 
@@ -40,7 +58,15 @@ export default function Banner() {
         <BannerContainer>
             <BannerImage></BannerImage>
             <ContainerHolder></ContainerHolder>
-            <TitleName font={currentFont}>Igor Nascimento</TitleName>
+            <LettersHolder>
+                {
+                    letters.map(({ letter, font }, index) => {
+                        return <TitleName key={index + 'letter'} font={font}>
+                            {letter}
+                        </TitleName>;
+                    })
+                }
+            </LettersHolder>
         </BannerContainer>
     )
 }
