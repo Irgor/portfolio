@@ -8,7 +8,7 @@ import { AfterViewInit, Component, ViewChild } from '@angular/core';
 
 export class BannerComponent implements AfterViewInit {
 
-  title = 'Igor Nascimento';
+  title = 'Igor  Nascimento';
   splitedTitle = this.title.split('');
 
   fonts = [
@@ -36,12 +36,7 @@ export class BannerComponent implements AfterViewInit {
   rerender() {
     setInterval(() => {
       this.title = 'Igor Nascimento';
-    }, 1400);
-
-
-    setTimeout(() => {
-      document.getElementById('title-container')!.style.border = 'none';
-    }, 4000)
+    }, 1500);
   }
 
   getFont() {
