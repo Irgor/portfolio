@@ -19,8 +19,6 @@ export class BannerComponent implements AfterViewInit {
     'comingSoon',
     'constantine',
     'craftyGirls',
-    'dacianDonarium',
-    'decoratedRomanInitials',
     'frederickat',
     'goudy',
     'homespun',
@@ -35,17 +33,19 @@ export class BannerComponent implements AfterViewInit {
     this.rerender();
   }
 
-  getRandomFontName(): string {
-    return this.fonts[Math.floor(Math.random() * this.fonts.length)];
-  }
-
-  getFont() {
-    return 'font-family: ' + this.getRandomFontName();
-  }
-
   rerender() {
     setInterval(() => {
       this.title = 'Igor Nascimento';
-    }, 1200);
+    }, 1400);
+
+
+    setTimeout(() => {
+      document.getElementById('title-container')!.style.border = 'none';
+    }, 4000)
   }
+
+  getFont() {
+    return 'font-family: ' + this.fonts[Math.floor(Math.random() * this.fonts.length)];;
+  }
+
 }
