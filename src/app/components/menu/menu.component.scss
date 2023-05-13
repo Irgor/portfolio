@@ -1,0 +1,25 @@
+.menu-container {
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    background-color: #FFFFFF20;
+    backdrop-filter: blur(6px);
+    color: white;
+    box-shadow: rgb(0, 0, 0, .5) 3px 3px 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    .menu-options, .menu-icon {
+        margin: 18px 40px;
+        display: flex;
+        flex-direction: row;
+        gap: 30px;
+        a {
+            text-decoration: none;
+            color: white
+        }
+    }
+}

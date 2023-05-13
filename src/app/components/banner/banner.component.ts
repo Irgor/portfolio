@@ -36,7 +36,7 @@ export class BannerComponent implements AfterViewInit {
   rerender() {
     setInterval(() => {
       this.title = 'Igor Nascimento';
-    }, 1500);
+    }, 1300);
   }
 
   getFont() {
