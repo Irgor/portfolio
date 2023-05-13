@@ -12,14 +12,25 @@
     justify-content: space-between;
     align-items: center;
 
-    .menu-options, .menu-icon {
+    .menu-options,
+    .menu-icon {
         margin: 18px 40px;
         display: flex;
         flex-direction: row;
         gap: 30px;
+
         a {
             text-decoration: none;
             color: white
         }
+    }
+
+    @media screen and (max-width: 600px) {
+        .menu-icon {
+            display: none;
+        }
+
+        background-color: hsla(0, 0%, 100%, 0.09);
+
     }
 }
