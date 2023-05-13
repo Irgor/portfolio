@@ -13,7 +13,6 @@ export class HomeComponent {
 
   getImage() {
     if (!!this.MOBILE_STRING.filter(option => navigator.userAgent.includes(option)).length) {
-      console.log(navigator.userAgent)
       return '/assets/images/sm-main-banner.png';
     }
 
